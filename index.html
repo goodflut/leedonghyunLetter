@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>🎂 Happy Birthday for DongSae 🎂</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap");
+            html {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+                padding: 0%;
+                font-family: "Noto Sans KR", sans-serif;
+            }
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0%;
+                padding: 0%;
+                margin: 0;
+                overflow: auto;
+                scroll-snap-type: y mandatory;
+            }
+            div.center {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+            div.container {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                scroll-snap-align: start;
+            }
+            div.left {
+                width: 50%;
+                height: 100%;
+                float: left;
+                display: grid;
+                place-content: center;
+            }
+            div.right {
+                width: 50%;
+                height: 100%;
+                float: right;
+                display: grid;
+                place-content: center;
+            }
+
+            img#silver {
+                width: 30vw;
+                height: auto;
+            }
+            img#sipal {
+                width: 25vw;
+                height: auto;
+            }
+            img#poodle {
+                width: 25vw;
+                height: auto;
+            }
+            img#money {
+                width: 20vw;
+                height: auto;
+            }
+            div.wallpaper {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+            }
+            div.wallpaper::after {
+                width: 100%;
+                height: 100%;
+                content: "";
+                background-image: var(--wallpaper-link);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                opacity: 0.3;
+            }
+            div#sipalwall {
+                --wallpaper-link: url("https://s2.best-wallpaper.net/wallpaper/3840x2160/2101/One-bird-grass-graves_3840x2160.jpg");
+            }
+            div#lolwall {
+                --wallpaper-link: url("https://media.discordapp.net/attachments/921061262362808323/989695240401215528/s0yrRL.png?width=1344&height=756");
+            }
+            div#happywall {
+                --wallpaper-link: url("https://media.discordapp.net/attachments/921061262362808323/989718372595941406/2022._6._24._11.23.jpg?width=1008&height=756");
+            }
+            div#logitecwall {
+                --wallpaper-link: url("https://scontent-frt3-1.xx.fbcdn.net/v/t31.18172-8/20617037_10155505657874871_2495346694590449553_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9267fe&_nc_ohc=DvOO_WiTLwIAX9PcfJ2&_nc_ht=scontent-frt3-1.xx&oh=00_AT825rBno9EZL36VZK7WkI7QXDU6m6IUkWV-HUG2Qr5MHQ&oe=62D9BB2A");
+            }
+
+            lol {
+                color: rgb(196, 142, 55);
+                font-weight: 700;
+            }
+            silver {
+                background: #55ffaa;
+                background: -webkit-linear-gradient(left, #a8a9ad, #e3e3e3);
+                background: -moz-linear-gradient(right, #a8a9ad, #e3e3e3);
+                background: -o-linear-gradient(right, #a8a9ad, #e3e3e3);
+                background: linear-gradient(to right, #a8a9ad, #e3e3e3);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                font-weight: 700;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: 0%;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+
+            birthday {
+                background: #e07ea7;
+                background: -webkit-linear-gradient(left, #fcfffa, #e07ea7);
+                background: -moz-linear-gradient(right, #fcfffa, #e07ea7);
+                background: -o-linear-gradient(right, #fcfffa, #e07ea7);
+                background: linear-gradient(to right, #fcfffa, #e07ea7);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            midnight {
+                background: #55ffaa;
+                background: -webkit-linear-gradient(left, #1aa7ec, #1e2f97);
+                background: -moz-linear-gradient(right, #1aa7ec, #1e2f97);
+                background: -o-linear-gradient(right, #1aa7ec, #1e2f97);
+                background: linear-gradient(to right, #1aa7ec, #1e2f97);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            wind {
+                color: #d3d3d3;
+            }
+            goodflut {
+                color: #ff665e;
+            }
+            rainbow {
+                background: #55ffaa;
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%
+                );
+                background: -moz-linear-gradient(
+                    right,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%
+                );
+                background: -o-linear-gradient(
+                    right,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%
+                );
+                background: linear-gradient(
+                    to right,
+                    rgba(255, 0, 0, 1) 0%,
+                    rgba(255, 154, 0, 1) 10%,
+                    rgba(208, 222, 33, 1) 20%,
+                    rgba(79, 220, 74, 1) 30%,
+                    rgba(63, 218, 216, 1) 40%,
+                    rgba(47, 201, 226, 1) 50%,
+                    rgba(28, 127, 238, 1) 60%,
+                    rgba(95, 21, 242, 1) 70%,
+                    rgba(186, 12, 248, 1) 80%,
+                    rgba(251, 7, 217, 1) 90%,
+                    rgba(255, 0, 0, 1) 100%
+                );
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+            h1#sex {
+                font-size: 10vw;
+                font-weight: 900;
+            }
+            h2 {
+                font-size: 3vw;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+            @media (prefers-color-scheme: dark) {
+                /* dark mode인 경우의 CSS */
+                html {
+                    background-color: #1f1e1c;
+                    color: white;
+                }
+            }
+            @media (prefers-color-scheme: light) {
+                /* light mode인 경우의 CSS */
+                html {
+                    background-color: #ffff;
+                    color: black;
+                }
+            }
+
+            /*스크롤 애니메이션 부분*/
+            .sa.show {
+                opacity: 1;
+                transform: none;
+            }
+            /* 아래에서 위로 페이드 인 */
+            .sa-up {
+                transform: translate(0, 100px);
+            }
+            /* 위에서 아래로 페이드 인 */
+            .sa-down {
+                transform: translate(0, -100px);
+            }
+            /* 왼쪽에서 오른쪽으로 페이드 인 */
+            .sa-right {
+                transform: translate(-100px, 0);
+            }
+            /* 오른쪽에서 왼쪽으로 페이드 인 */
+            .sa-left {
+                transform: translate(100px, 0);
+            }
+            /* 왼쪽으로 회전하면서 페이드 인 */
+            .sa-rotateL {
+                transform: rotate(180deg);
+            }
+            /* 오른쪽으로 회전하면서 페이드 인 */
+            .sa-rotateR {
+                transform: rotate(-180deg);
+            }
+            /* 작아진 상태에서 커지면서 페이드 인 */
+            .sa-scaleUp {
+                transform: scale(0.5);
+            }
+            /* 커진 상태에서 작아지면서 페이드 인 */
+            .sa-scaleDown {
+                transform: scale(1.5);
+            }
+            .sa {
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <div class="container" id="first">
+                <div class="sa sa-up" data-sa-trigger="#first">
+                    <h1>우리 <midnight>새벽반 일동</midnight>은</h1>
+                    <h1>
+                        <goodflut>아저씨</goodflut>의
+                        <birthday>생일</birthday>을 진심으로 축하합니다!
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container">
+                <img
+                    src="https://cdn-icons.flaticon.com/png/512/3113/premium/3113054.png?token=exp=1656035850~hmac=05e61a274daca6f385d1b21d270c3023"
+                    alt="업적이미지"
+                    id="achievements first"
+                    class="sa sa-up"
+                    style="width: 10vw"
+                />
+                <h1 class="sa sa-up" data-sa-trigger="#first">
+                    <goodflut>아저씨</goodflut>의 업적
+                </h1>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container wallpaper" id="sipalwall">
+                <div class="left">
+                    <h2 class="sa sa-up" id="second">만 18세 달성</h2>
+                    <p class="sa sa-up" data-sa-trigger="#second">
+                        2004.06.24 탄생<br />
+                    </p>
+                </div>
+                <div class="right" data-sa-trigger="#second">
+                    <img
+                        src="https://cdn-icons.flaticon.com/png/512/3513/premium/3513796.png?token=exp=1656037858~hmac=79e6a40568cebb05a209450d8a52e695"
+                        alt="18세 이미지"
+                        id="sipal"
+                        class="sa sa-up"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container wallpaper" id="lolwall">
+                <div class="left">
+                    <h2 class="sa sa-up" id="third">
+                        <lol>League of Legend</lol>
+                    </h2>
+                    <p class="sa sa-up" data-sa-trigger="#third">
+                        드디어 <sliver>실버</sliver> 승급
+                    </p>
+                </div>
+                <div class="right" data-sa-trigger="#third">
+                    <img
+                        src="https://media.discordapp.net/attachments/921061262362808323/989688908562436156/Season_2022_-_Silver.webp?width=756&height=756"
+                        alt="실버 이미지"
+                        id="silver"
+                        class="sa sa-up"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container wallpaper" id="happywall">
+                <div class="left">
+                    <h2 class="sa sa-up" id="four">해피 돌보기</h2>
+                    <p class="sa sa-up" data-sa-trigger="#four">
+                        해피야 제발 물어
+                    </p>
+                </div>
+                <div class="right" data-sa-trigger="#four">
+                    <img
+                        src="https://cdn-icons.flaticon.com/png/512/3307/premium/3307752.png?token=exp=1656038692~hmac=0f7c90aa0b1bbc418eec85e4980b7875"
+                        alt="푸들 이미지"
+                        id="poodle"
+                        class="sa sa-up"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container wallpaper" id="logitecwall">
+                <div class="left">
+                    <h2 class="sa sa-up" id="five">
+                        로지텍 풀세트 기어 맞추기
+                    </h2>
+                    <p class="sa sa-up" data-sa-trigger="#five">
+                        로지텍의 충성적인 노예달성
+                    </p>
+                </div>
+                <div class="right" data-sa-trigger="#five">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
+                        alt="돈 이미지"
+                        id="money"
+                        class="sa sa-up"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container" id="six">
+                <div class="sa sa-up" data-sa-trigger="#six">
+                    <h1>더하면 <wind>추할거같아</wind><br />여기까지만...</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container" id="seven">
+                <div class="sa sa-up" data-sa-trigger="#seven">
+                    <h1>
+                        그래도 우리 <midnight>새벽반</midnight><br />많이
+                        <rainbow>사랑</rainbow>하시죠? ^^
+                    </h1>
+                    <span>이러고 사는 새끼들 몇 없습니다~</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container" id="eight">
+                <div class="sa sa-up" data-sa-trigger="#eight">
+                    <h1>
+                        그래도 다시한번<br /><birthday>생일</birthday>
+                        축하드립니다
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container" id="nine">
+                <div class="sa sa-up" data-sa-trigger="#nine">
+                    <h1>역시 마무리는...</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container" id="ten">
+                <div class="sa sa-up" data-sa-trigger="#ten">
+                    <h1 id="sex"><rainbow>섹스</rainbow></h1>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        // Scroll Animation (sa, 스크롤 애니메이션)
+        const saTriggerMargin = 300;
+        let saTriggerHeight = 0;
+        const saElementList = document.querySelectorAll(".sa");
+
+        const saFunc = function () {
+            for (const element of saElementList) {
+                if (!element.classList.contains("show")) {
+                    if (element.dataset.saTrigger) {
+                        saTriggerHeight =
+                            document
+                                .querySelector(element.dataset.saTrigger)
+                                .getBoundingClientRect().top + saTriggerMargin;
+                    } else {
+                        saTriggerHeight =
+                            element.getBoundingClientRect().top +
+                            saTriggerMargin;
+                    }
+
+                    if (window.innerHeight > saTriggerHeight) {
+                        element.classList.add("show");
+                    }
+                }
+            }
+        };
+
+        window.addEventListener("load", saFunc);
+        window.addEventListener("scroll", saFunc);
+
+        window.addEventListener("load", saFunc);
+        window.addEventListener("scroll", saFunc);
+    </script>
+</html>
