@@ -114,6 +114,15 @@
             div#rowall {
                 --wallpaper-link: url("./img/ro.jpg");
             }
+            div#sangwall {
+                --wallpaper-link: url("./img/sang.jpg");
+            }
+            div#ziwall {
+                --wallpaper-link: url("./img/zi.jpg");
+            }
+            div#avwall {
+                --wallpaper-link: url("./img/avengers.png");
+            }
 
             lol {
                 color: rgb(196, 142, 55);
@@ -524,6 +533,40 @@
         </div>
 
         <div class="center">
+            <div class="container wallpaper" id="sangwall">
+                <div class="left">
+                    <h2 class="sa sa-up" id="sang">"가고싶은대로 간다"</h2>
+                    <p class="sa sa-up" data-sa-trigger="#sang">데니스리</p>
+                </div>
+                <div class="right" data-sa-trigger="#sang">
+                    <img
+                        src="./img/sangicon.png"
+                        alt="돈 이미지"
+                        id="money"
+                        class="sa sa-up"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="container wallpaper" id="ziwall">
+                <div class="left">
+                    <h2 class="sa sa-up" id="zi">"생일이니까... 같이 숏코딩할래?"</h2>
+                    <p class="sa sa-up" data-sa-trigger="#zi">순수</p>
+                </div>
+                <div class="right" data-sa-trigger="#zi">
+                    <img
+                        src="./img/ziicon.png"
+                        alt="돈 이미지"
+                        id="money"
+                        class="sa sa-up"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
             <div class="container" id="nine">
                 <div class="sa sa-up" data-sa-trigger="#nine">
                     <h1>역시 마무리는...</h1>
@@ -532,8 +575,8 @@
         </div>
 
         <div class="center">
-            <div class="container" id="ten">
-                <div class="sa sa-up" data-sa-trigger="#ten">
+            <div class="container wallpaper" id="avwall">
+                <div class="sa sa-up">
                     <h1 id="sex"><rainbow>섹스</rainbow></h1>
                 </div>
             </div>
